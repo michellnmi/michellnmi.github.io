@@ -1,0 +1,921 @@
+*{padding: 0; margin: 0;}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 100%;
+    width: 100%;
+}
+body header{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+.socmed{
+    padding: 5px 0;
+    float: left;
+    position: absolute;
+    z-index: 99;
+}
+.socmed ul li{
+    display: inline-block;
+    color: rgb(255, 0, 140);
+    margin-right: 10px;
+}
+.socmed .container a{
+    color: inherit;
+    text-decoration: none;
+}
+.container{
+    margin: 10px 200px;
+}
+nav{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 80px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav .logo{
+    padding: 30px;
+    padding-left: 100px;
+    height: 50px;
+    float: left;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+nav .logo b{
+    color: rgb(255, 0, 140);
+}
+nav ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    padding-right: 100px;
+}
+nav ul li a{
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color: rgb(255, 0, 140);
+}
+nav ul li a.active{
+    color: rgb(255, 0, 140);
+    border-bottom: 3px solid rgb(255, 0, 140);
+}
+nav ul li .b{
+    line-height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav ul li .b:hover{
+    background-color: rgb(247, 204, 227);
+}
+.gif{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3 black;
+    top: 0;
+    left:0;
+    z-index: 1;
+}
+video{
+    position: absolute;
+    filter: grayscale(50%);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.title{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title{
+    opacity: 1;
+}
+.title h1{
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-style: italic;
+    line-height: 150px;
+}
+.title h1 b{
+    color: rgb(255, 0, 140);
+}
+.title a{
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    width: 100px;
+    margin: auto;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title a:hover{
+    background-color: rgb(247, 204, 227);
+}
+
+article{
+    width: 100%;
+    height: 100vh;
+}
+.about nav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about nav .logo{
+    padding: 25px;
+    height: 50px;
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.about nav .logo b{
+    color: rgb(255, 0, 140);
+}
+.about nav ul{
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+    display: flex;
+}
+.about nav ul li a{
+    line-height: 80px;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.about nav ul li a:hover{
+    color: rgb(255, 0, 140);
+}
+.about nav ul li a.active{
+    color: rgb(255, 0, 140);
+}
+.about nav ul li .b{
+    line-height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.about nav ul li .b:hover{
+    background-color: rgb(247, 204, 227);
+}
+
+.opening{
+    width: 100%;
+    margin-top: 70px;
+    display: block;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.opening img{
+    width: 100px;
+    height: 100px;
+}
+.opening h1{
+    font-size: 30px;
+}
+.opening h1 b{
+    color: rgb(255, 0, 140);
+}
+.opening p{
+    margin: auto;
+    width: 500px;
+   text-align: center;
+}
+.about .tengah{
+    margin-top: 50px;
+    margin:auto;
+    overflow: hidden;
+    width: 1000px;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tengah a{
+    color: rgb(255, 0, 140);
+    text-decoration: none;
+}
+.about .tengah .kiri{
+    width: 450px;
+    float: left;
+    margin: auto;
+}
+.kiri img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+.kiri .content{
+    display: inline;
+    padding-left: 20px;
+}
+
+.about .tengah .kanan{
+    width: 450px;
+    float: left;
+    padding-left: 20px;
+    margin: auto;
+}
+.kanan img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.kanan .content{
+    display: inline;
+    padding-left: 20px;
+}
+.closing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.closing img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
+    display: block;
+    filter: grayscale(50%);
+    margin-bottom: 0;
+    margin-top: 170px;
+}
+.closing p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.classes nav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.classes nav .logo{
+    padding: 25px;
+    height: 50px;
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.classes nav .logo b{
+    color: rgb(255, 0, 140);
+}
+.classes nav ul{
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+    display: flex;
+}
+.classes nav ul li a{
+    line-height: 80px;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.classes nav ul li a:hover{
+    color: rgb(255, 0, 140);
+}
+.classes nav ul li a.active{
+    color: rgb(255, 0, 140);
+}
+.classes nav ul li .b{
+    line-height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.classes nav ul li .b:hover{
+    background-color: rgb(247, 204, 227);
+}
+.classes .design{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    line-height: 55px;
+    width: 1000px;
+    height: 120vh;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.classes .opt{
+    width: 500px;
+    float: left;
+}
+.box{
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+    height: 10vh;
+    margin: 30px auto;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    display: inline;
+   padding: 10px;
+}
+.box img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-right: 20px;
+}
+.tool a{
+    margin-left: 80px;
+    background: rgb(255, 0, 140);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 100px;
+    height: 10vh;
+}
+.tool a:hover{
+    background-color: rgb(247, 204, 227);
+}
+.isi{
+    margin-top: 50px;
+    float: left;
+    width: 450px
+}
+.isi img{
+    width: 500px;
+}
+.isi p{
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.isi a{
+    border-radius: 0%;
+    padding: 20px 30px;
+    margin-left: 5px;
+}
+
+.schedules nav{
+    clear: both;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.schedules nav .logo {
+    padding: 25px;
+    height: 50px;
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+.schedules nav .logo b {
+    color: rgb(255, 0, 140);
+}
+.schedules nav ul {
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+    display: flex;
+}
+.schedules nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.schedules nav ul li a:hover {
+    color: rgb(255, 0, 140);
+}
+.schedules nav ul li a.active {
+    color: rgb(255, 0, 140);
+}
+.schedules nav ul li .b {
+    line-height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.schedules nav ul li .b:hover {
+    background-color: rgb(247, 204, 227);
+}
+.bg .info {
+    margin: auto;
+    opacity: 0.9;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bg img{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+.schedules .opening i{
+    opacity: 0.9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.schedules .opening h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+.schedules .opening h1 b {
+    color: rgb(255, 0, 140);
+}
+.schedules .opening p {
+    width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+.bg .sche h1{
+    margin-bottom: 10px;
+}
+.sche h1 b {
+    color: rgb(255, 0, 140);
+}
+table {
+    margin: auto;
+    width: 70%;
+    height: 50vh;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+}
+ 
+table  th {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+ 
+}
+table  td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+.exp{
+    width: 1000px;
+    margin: auto;
+}
+.exp .opening{
+    margin-top: 150px;
+}
+.profile {
+    margin: auto;
+    width: 1000px;
+    clear: both;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profile .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 250px;
+    height: 450px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    line-height: 25px;
+}
+img {
+    border-radius: 5px 5px 0 0;
+    width: 250px;
+}
+.card h6 {
+    color: rgb(255, 0, 140);
+}
+.card ul li{
+    padding: 5px 0;
+    float: left;
+    display: inline-block;
+    color: rgb(255, 0, 140);
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.card ul li a{
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact nav{
+    clear: both;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact nav .logo {
+    padding: 25px;
+    height: 50px;
+    float: left;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding-left: 100px;
+}
+.contact nav .logo b {
+    color: rgb(255, 0, 140);
+}
+.contact nav ul {
+    list-style: none;
+    float: right;
+    padding-right: 100px;
+    display: flex;
+}
+.contact nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.contact nav ul li a:hover {
+    color: rgb(255, 0, 140);
+}
+.contact nav ul li a.active {
+    color: rgb(255, 0, 140);
+}
+.contact nav ul li .b {
+    line-height: 80px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.contact nav ul li .b:hover {
+    background-color: rgb(247, 204, 227);
+}
+.contact .kolom {
+    clear: both;
+    width: 102%;
+    position: absolute;
+    display: block;
+}
+.contact .kolom iframe{
+    width: 50%; 
+    height: 88vh;
+    float: left;
+}
+.bgform {
+    padding: 30px;
+    float: left;
+    width: 45%;
+    height: 80vh;
+    background-image: url(sky.jpg);
+}
+.bgform form {
+    margin-top: 150px;
+    margin: auto;
+    width: 90%;
+    height: 70vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding: 0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin: 0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 150px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: rgb(255, 0, 140);
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: rgb(247, 204, 227);
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form-style-1 .required{
+	color:rgb(255, 255, 255);
+}
+
+.appli {
+    width: 1000px;
+    margin-top: 800px;
+    margin-left: 200px;
+    text-align: center;
+    line-height: 30px;
+}
+.appli h1 {
+    margin: auto;
+    border-bottom: 2px solid red;
+    width: 500px;
+}
+.appli p {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 200px;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .appli button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+  }
+  
+  .form-inline button:hover {
+    background-color: red;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .page{
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 0;
+}
+
+.x{
+    background-image: linear-gradient(to bottom right, green, rgb(136, 226, 76));
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.y{
+    background-image: linear-gradient(to bottom right, blue, rgb(78, 76, 226));
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.z{
+    background-image: linear-gradient(to bottom right, grey, rgb(109, 116, 104));
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.f{
+    background-image: linear-gradient(to bottom right, grey, rgb(109, 116, 104));
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 20px;
+    position: static;
+    margin-top: 200px;
+    background-image: url(back.png);
+}
+.bio {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  line-height: 30px;
+}
+
+.bio .title {
+  padding-bottom: 20px;
+  color: grey;
+  font-size: 18px;
+}
+
+.bio button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(255, 0, 140);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.bio a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.bio button:hover, .bio a:hover {
+  opacity: 0.7;
+}
+
+
+
+
